@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'rubik';
+    src: url('/HTML/Startpage Resources/Rubik-VariableFont_wght.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'rubik';
+}
+
+body{
+    background-color: #2e3440;
+    width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.input_box{
+	border: none;
+	background: #3b4252;
+	padding: 13px;
+	color: #ffffff;
+	font-size: 20px;
+	transition: 0.5px all;
+	border-radius: 10px 10px 10px 10px;
+	width: 630px;
+	margin-bottom: 30px;
+}
+
+.column-container{
+	width: 100%;
+	height: 100vh;
+	display: flexbox;
+	flex-direction: row;
+	align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px 15px 15px;
+    font-size: 18px;
+}
+
+
+.column p{
+    color: #eceff4;
+    padding-bottom: 5px;
+}
+
+.column a{
+    text-decoration: none;
+    display: inline-block;
+    color:#81a1c1;
+    transition: .3s;
+}
+
+.column a.blank{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.column a:hover{
+    color: #4c566a;
+}
+
+img{
+    width: 18px;
+    transform: translateY(2px);
+    padding-right: 4px;
+    -webkit-filter: grayscale(10%);
+    filter:grayscale(100);    
+}
