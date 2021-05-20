@@ -1,87 +1,77 @@
-@font-face {
-    font-family: 'rubik';
-    src: url('/HTML/Startpage Resources/Rubik-VariableFont_wght.ttf');
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'rubik';
-}
-
-body{
-    background-color: #2e3440;
-    width: 100%;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-
-.input_box{
-	border: none;
-	background: #3b4252;
-	padding: 13px;
-	color: #ffffff;
-	font-size: 20px;
-	transition: 0.5px all;
-	border-radius: 10px 10px 10px 10px;
-	width: 630px;
-	margin-bottom: 30px;
-}
-
-.column-container{
-	width: 100%;
-	height: 100vh;
-	display: flexbox;
-	flex-direction: row;
-	align-items: center;
-    justify-content: center;
-}
-
-.container{
-    display: flex;
-    flex-direction: row;
+html {
     align-items: center;
+    background-color: #2e3440;
+    display: flex;
+    font: 20px/1 "Sarasa Mono K";
+    height: 100%;
     justify-content: center;
-    
 }
 
-.column{
+body {
+    min-height: 16ch;
+    min-width: 45px;
+    background-color: #434c5e;
+    box-shadow: 0px 0px 11px #1d1f2187;
+    border-radius: 7px;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
-    padding: 15px 30px 15px 15px;
-    font-size: 18px;
+    justify-content: center;
+    padding: 3em;
 }
 
-
-.column p{
-    color: #eceff4;
-    padding-bottom: 5px;
+p {
+    margin: 0;
 }
 
-.column a{
+p span {
+    color: #9ce5c0;
+}
+
+a {
+    color: inherit;
     text-decoration: none;
-    display: inline-block;
-    color:#81a1c1;
-    transition: .3s;
+    line-height: 25px;
 }
 
-.column a.blank{
-    opacity: 0;
-    pointer-events: none;
+a:focus,
+a:hover {
+    font-weight: bold;
+    color: #81a1c1;
 }
 
-.column a:hover{
-    color: #4c566a;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-img{
-    width: 18px;
-    transform: translateY(2px);
-    padding-right: 4px;
-    -webkit-filter: grayscale(10%);
-    filter:grayscale(100);    
+nav {
+    column-gap: 2em;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 1em 0;
+}
+
+b #cursor {
+    background-color: #ffffff;
+    animation: blink 3s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    49% { opacity: 0; }
+    50% { opacity: 1; }
+}
+b {
+    margin: 0;
+}
+b span0 {
+    color: rgb(255, 255, 255);
+}
+b span1 {
+    color:#88c0d0;
+}
+b span2 {
+    color: #b48ead;
 }
