@@ -20,12 +20,17 @@ body {
     padding: 3em;
 }
 
-p {
+ul {
+    list-style-type: none;
     margin: 0;
+    padding: 0;
 }
 
-p span {
-    color: #9ce5c0;
+nav {
+    column-gap: 2em;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 1em 0;
 }
 
 a {
@@ -40,22 +45,9 @@ a:hover {
     color: #81a1c1;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav {
-    column-gap: 2em;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 1em 0;
-}
-
 b #cursor {
-    background-color: #ffffff;
-    animation: blink 3s infinite;
+    background-color: #8fbcbb;
+    animation: blink 2s infinite;
 }
 
 @keyframes blink {
